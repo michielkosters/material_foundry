@@ -1,0 +1,48 @@
+&CONTROL
+  calculation = 'scf',
+  restart_mode = 'from_scratch',
+  pseudo_dir = './pseudos/sssp_efficiency',
+  outdir = './out',
+  prefix = 'pwscf',
+  tprnfor = .true.,
+  tstress = .true.,
+  verbosity = 'low',
+  disk_io = 'none',
+/
+&SYSTEM
+  ibrav = 0,
+  nat = 11,
+  ntyp = 3,
+  ecutwfc = 40.0,
+  ecutrho = 320.0,
+  occupations = 'smearing',
+  smearing = 'mv',
+  degauss = 0.020,
+/
+&ELECTRONS
+  conv_thr = 1.0d-5,
+  mixing_beta = 0.35,
+  electron_maxstep = 150,
+/
+ATOMIC_SPECIES
+  B       10.8100  b_pbe_v1.4.uspp.F.UPF
+  Ni      58.6934  ni_pbe_v1.4.uspp.F.UPF
+  Ta     180.9479  Ta_pbe_v1.uspp.F.UPF
+CELL_PARAMETERS {angstrom}
+     -3.1965009230      0.0000000000      0.0000000000
+     -0.0000000000     -3.3387668430      0.0000000000
+      1.5982504615      1.6693834215      9.6959798679
+ATOMIC_POSITIONS {crystal}
+  Ta       0.5000000000      0.5000000000      0.0000000000
+  Ta       0.8657239587      0.3657239587      0.7314479174
+  Ta       0.1342760413      0.6342760413      0.2685520826
+  Ni       0.7488845938      0.7488845938      0.4977691876
+  Ni       0.2511154062      0.2511154062      0.5022308124
+  B        0.6824447157      0.1824447157      0.3648894315
+  B        0.3175552843      0.8175552843      0.6351105685
+  B        0.9546065668      0.9546065668      0.9092131337
+  B        0.0453934332      0.0453934332      0.0907868663
+  B        0.5920877467      0.0920877467      0.1841754935
+  B        0.4079122533      0.9079122533      0.8158245065
+K_POINTS {automatic}
+  8 7 3 0 0 0
