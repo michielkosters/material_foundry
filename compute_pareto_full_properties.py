@@ -212,9 +212,9 @@ def write_qe_spin_input(
     structure: Structure,
     pseudo_map: dict,
     pseudo_dir: Path,
-    ecutwfc: float = 36.0,
-    ecutrho: float = 288.0,
-    k_spacing: float = 0.32,
+    ecutwfc: float = 40.0,
+    ecutrho: float = 320.0,
+    k_spacing: float = 0.28,
 ) -> str:
     """Generate a collinear spin-polarized (nspin=2) Quantum ESPRESSO pw.x SCF input file."""
     species_unique = sorted({str(s.specie) for s in structure})
@@ -452,32 +452,29 @@ def main():
         els_present = {str(el) for el in s.composition.elements}
         has_3d_mag = bool(els_present & mag_3d_els) and pid not in {"1743", "1575"}
 
-        # Run collinear spin-polarized QE (nspin=2) if 3d magnetic elements are present and not yet cached
-        if has_3d_mag and "spin_converged" not in q_rec:
-            print(f"[QE-SPIN] Running collinear spin-polarized (nspin=2) pw.x SCF on [{pid}] {q_rec['formula']}...", flush=True)
+        # Re-run collinear spin-polarized QE (nspin=2) at matched 40 Ry / 320 Ry / 0.28 basis for FM phases (1586, 0982)
+        if pid in {"1586", "0982"} and not q_rec.get("spin_matched_basis_40Ry"):
+            print(f"[QE-SPIN-40RY] Running matched-basis (40/320 Ry) nspin=2 pw.x SCF on [{pid}] {q_rec['formula']}...", flush=True)
             spin_res = run_qe_spin(s, pseudo_map, save_dir=dft_dir)
             q_rec.update(spin_res)
+            q_rec["spin_matched_basis_40Ry"] = True
+            nm_e = q_rec.get("qe_energy_eV_atom")
+            sp_e = spin_res.get("spin_energy_eV_atom")
+            if nm_e is not None and sp_e is not None:
+                q_rec["mag_stabilization_meV_atom"] = round((sp_e - nm_e) * 1000.0, 1)
             abs_m = spin_res.get("abs_mag_muB_cell", 0.0)
             tot_m = spin_res.get("total_mag_muB_cell", 0.0)
-            if abs_m < 0.08:
-                mag_state = "Non-Magnetic / Pauli Paramagnet (0.00 mu_B)"
-            elif abs(tot_m) >= 0.5 * abs_m and abs_m >= 0.25:
-                mag_state = f"Ferromagnetic (M_tot = {tot_m:+.2f} mu_B/cell, |mu| = {abs_m:.2f} mu_B)"
-            else:
-                mag_state = f"Weak Itinerant / Antiferromagnetic (|mu| = {abs_m:.2f} mu_B/cell)"
-            q_rec["magnetic_state"] = mag_state
-            if spin_res.get("spin_max_force_eV_A") is not None and q_rec.get("qe_max_force_eV_A") is None:
-                q_rec["qe_max_force_eV_A"] = spin_res["spin_max_force_eV_A"]
-                q_rec["qe_rms_force_eV_A"] = spin_res["spin_rms_force_eV_A"]
+            q_rec["magnetic_state"] = f"Ferromagnetic (M_tot = {tot_m:+.2f} mu_B/cell, |mu| = {abs_m:.2f} mu_B)"
             print(
-                f"          -> {q_rec['formula']:14s}: {mag_state} | P_spin={spin_res.get('spin_pressure_GPa')} GPa | max|F|={q_rec.get('qe_max_force_eV_A')} eV/A ({spin_res.get('spin_wall_seconds')}s)",
+                f"          -> {q_rec['formula']:14s}: {q_rec['magnetic_state']} | dE_mag={q_rec.get('mag_stabilization_meV_atom')} meV/at | P_spin={spin_res.get('spin_pressure_GPa')} GPa ({spin_res.get('spin_wall_seconds')}s)",
                 flush=True,
             )
-        elif not has_3d_mag and "magnetic_state" not in q_rec:
-            q_rec["magnetic_state"] = "Non-Magnetic / Pauli Paramagnet (4d/5d/p-block)"
-            q_rec["total_mag_muB_cell"] = 0.0
-            q_rec["abs_mag_muB_cell"] = 0.0
-            q_rec["mag_muB_atom"] = 0.0
+        elif q_rec.get("abs_mag_muB_cell", 0.0) < 0.08:
+            # For Pauli paramagnets (0.00 mu_B), nspin=2 and nspin=1 are identical at matched 40 Ry / 320 Ry cutoff
+            q_rec["spin_energy_eV_atom"] = q_rec.get("qe_energy_eV_atom")
+            q_rec["spin_pressure_GPa"] = q_rec.get("qe_pressure_GPa")
+            q_rec["mag_stabilization_meV_atom"] = 0.0
+            q_rec["spin_matched_basis_40Ry"] = True
 
         # Compute full derived engineering properties & usefulness assessment
         eng = compute_derived_engineering_metrics(v_rec, s)

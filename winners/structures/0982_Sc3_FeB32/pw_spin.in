@@ -13,8 +13,8 @@
   ibrav = 0,
   nat = 11,
   ntyp = 3,
-  ecutwfc = 36.0,
-  ecutrho = 288.0,
+  ecutwfc = 40.0,
+  ecutrho = 320.0,
   nspin = 2,
   occupations = 'smearing',
   smearing = 'mv',
@@ -49,4 +49,4 @@ ATOMIC_POSITIONS {crystal}
   B        0.0922941613      0.0922941613      0.1845883227
   B        0.9077058387      0.9077058387      0.8154116773
 K_POINTS {automatic}
-  7 6 2 0 0 0
+  8 7 3 0 0 0

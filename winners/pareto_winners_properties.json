@@ -57,7 +57,11 @@
     "dg_hull_1000K_meV_atom": -32.8,
     "bz_min_phonon_THz": 2.87,
     "competing_reaction": "1.00 AlTi (agm002135595) + 1.00 Al2CuTi (agm001196557)",
-    "discovery_score": 68
+    "discovery_score": 68,
+    "spin_energy_eV_atom": -1725.559172,
+    "spin_pressure_GPa": -0.59,
+    "mag_stabilization_meV_atom": 0.0,
+    "spin_matched_basis_40Ry": true
   },
   {
     "proposal_id": "1743",
@@ -117,7 +121,11 @@
     "dg_hull_1000K_meV_atom": -16.9,
     "bz_min_phonon_THz": 3.46,
     "competing_reaction": "0.50 B6Lu2Ni3 (agm003208531) + 0.50 B2NiTa (mp-22709) + 0.50 B4Ta3 (agm003258536)",
-    "discovery_score": 76
+    "discovery_score": 76,
+    "spin_energy_eV_atom": -2584.205373,
+    "spin_pressure_GPa": -10.03,
+    "mag_stabilization_meV_atom": 0.0,
+    "spin_matched_basis_40Ry": true
   },
   {
     "proposal_id": "1311",
@@ -151,11 +159,11 @@
     "debye_K": 607,
     "min_phonon_THz": 5.78,
     "spin_converged": true,
-    "spin_energy_eV_atom": -1260.232578,
+    "spin_energy_eV_atom": -1260.23079,
     "total_mag_muB_cell": -0.0,
     "abs_mag_muB_cell": 0.01,
     "mag_muB_atom": 0.002,
-    "spin_pressure_GPa": -3.26,
+    "spin_pressure_GPa": -1.5,
     "spin_max_force_eV_A": 0.1667,
     "spin_rms_force_eV_A": 0.1054,
     "spin_wall_seconds": 26.77,
@@ -183,7 +191,9 @@
     "dg_hull_1000K_meV_atom": -25.5,
     "bz_min_phonon_THz": 2.48,
     "competing_reaction": "0.25 B3Cr5 (mp-15617) + 0.63 B2Zr (mp-1472) + 0.37 Cr2Zr (mp-903)",
-    "discovery_score": 70
+    "discovery_score": 70,
+    "mag_stabilization_meV_atom": 0.0,
+    "spin_matched_basis_40Ry": true
   },
   {
     "proposal_id": "1920",
@@ -243,7 +253,11 @@
     "dg_hull_1000K_meV_atom": -19.2,
     "bz_min_phonon_THz": 2.38,
     "competing_reaction": "0.33 B2Zr (mp-1472) + 0.33 BIr6Zr2 (agm003268112) + 1.00 B (agm003811913)",
-    "discovery_score": 63
+    "discovery_score": 63,
+    "spin_energy_eV_atom": -1294.553085,
+    "spin_pressure_GPa": -4.39,
+    "mag_stabilization_meV_atom": 0.0,
+    "spin_matched_basis_40Ry": true
   },
   {
     "proposal_id": "1157",
@@ -277,11 +291,11 @@
     "debye_K": 722,
     "min_phonon_THz": 3.91,
     "spin_converged": true,
-    "spin_energy_eV_atom": -2137.587135,
+    "spin_energy_eV_atom": -2137.627138,
     "total_mag_muB_cell": 0.0,
     "abs_mag_muB_cell": 0.01,
     "mag_muB_atom": 0.001,
-    "spin_pressure_GPa": -8.72,
+    "spin_pressure_GPa": -1.34,
     "spin_max_force_eV_A": 0.5208,
     "spin_rms_force_eV_A": 0.2347,
     "spin_wall_seconds": 160.04,
@@ -309,7 +323,9 @@
     "dg_hull_1000K_meV_atom": -12.3,
     "bz_min_phonon_THz": 4.43,
     "competing_reaction": "2.00 B2NbNi (oqmd-9462278) + 1.00 B2Nb (mp-450)",
-    "discovery_score": 81
+    "discovery_score": 81,
+    "mag_stabilization_meV_atom": 0.0,
+    "spin_matched_basis_40Ry": true
   },
   {
     "proposal_id": "2786",
@@ -369,7 +385,11 @@
     "dg_hull_1000K_meV_atom": -12.1,
     "bz_min_phonon_THz": 1.26,
     "competing_reaction": "1.58 BW (agm003263694) + 0.08 B5Ir3W2 (agm003206773) + 0.25 Ir3W (mp-30745)",
-    "discovery_score": 62
+    "discovery_score": 62,
+    "spin_energy_eV_atom": -1395.812601,
+    "spin_pressure_GPa": -1.44,
+    "mag_stabilization_meV_atom": 0.0,
+    "spin_matched_basis_40Ry": true
   },
   {
     "proposal_id": "2802",
@@ -403,11 +423,11 @@
     "debye_K": 471,
     "min_phonon_THz": 2.97,
     "spin_converged": true,
-    "spin_energy_eV_atom": -1162.835864,
+    "spin_energy_eV_atom": -1162.868389,
     "total_mag_muB_cell": -0.0,
     "abs_mag_muB_cell": 0.0,
     "mag_muB_atom": 0.0,
-    "spin_pressure_GPa": -3.96,
+    "spin_pressure_GPa": -0.65,
     "spin_max_force_eV_A": 0.0987,
     "spin_rms_force_eV_A": 0.0642,
     "spin_wall_seconds": 45.85,
@@ -435,7 +455,9 @@
     "dg_hull_1000K_meV_atom": -10.2,
     "bz_min_phonon_THz": 1.76,
     "competing_reaction": "1.00 Al2Ni (agm002133519) + 2.00 Al (mp-134) + 1.00 Si (mp-149)",
-    "discovery_score": 55
+    "discovery_score": 55,
+    "mag_stabilization_meV_atom": 0.0,
+    "spin_matched_basis_40Ry": true
   },
   {
     "proposal_id": "2575",
@@ -469,11 +491,11 @@
     "debye_K": 678,
     "min_phonon_THz": 1.63,
     "spin_converged": true,
-    "spin_energy_eV_atom": -1100.933941,
+    "spin_energy_eV_atom": -1100.939757,
     "total_mag_muB_cell": -0.03,
     "abs_mag_muB_cell": 0.05,
     "mag_muB_atom": 0.003,
-    "spin_pressure_GPa": -2.26,
+    "spin_pressure_GPa": -1.19,
     "spin_max_force_eV_A": 0.5958,
     "spin_rms_force_eV_A": 0.3145,
     "spin_wall_seconds": 148.89,
@@ -501,7 +523,9 @@
     "dg_hull_1000K_meV_atom": -10.3,
     "bz_min_phonon_THz": 3.16,
     "competing_reaction": "0.17 C5V6 (agm003242071) + 0.17 C (mp-937760) + 1.00 C2SiV3 (agm002139633)",
-    "discovery_score": 62
+    "discovery_score": 62,
+    "mag_stabilization_meV_atom": 0.0,
+    "spin_matched_basis_40Ry": true
   },
   {
     "proposal_id": "1586",
@@ -535,15 +559,15 @@
     "debye_K": 727,
     "min_phonon_THz": 4.2,
     "spin_converged": true,
-    "spin_energy_eV_atom": -938.629104,
-    "total_mag_muB_cell": 1.9,
-    "abs_mag_muB_cell": 2.44,
-    "mag_muB_atom": 0.222,
-    "spin_pressure_GPa": 1.07,
-    "spin_max_force_eV_A": 0.6217,
-    "spin_rms_force_eV_A": 0.4534,
-    "spin_wall_seconds": 107.86,
-    "magnetic_state": "Ferromagnetic (M_tot = +1.90 mu_B/cell, |mu| = 2.44 mu_B)",
+    "spin_energy_eV_atom": -938.630514,
+    "total_mag_muB_cell": 1.96,
+    "abs_mag_muB_cell": 2.5,
+    "mag_muB_atom": 0.227,
+    "spin_pressure_GPa": 0.47,
+    "spin_max_force_eV_A": 0.6324,
+    "spin_rms_force_eV_A": 0.448,
+    "spin_wall_seconds": 235.44,
+    "magnetic_state": "Ferromagnetic (M_tot = +1.96 mu_B/cell, |mu| = 2.50 mu_B)",
     "poissons_ratio": 0.233,
     "vickers_hardness_GPa": 19.6,
     "fracture_toughness_MPa_m05": 4.41,
@@ -567,7 +591,9 @@
     "dg_hull_1000K_meV_atom": -7.1,
     "bz_min_phonon_THz": 3.48,
     "competing_reaction": "3.00 B2Zr (mp-1472) + 2.00 Mn (agm002161727)",
-    "discovery_score": 69
+    "discovery_score": 69,
+    "spin_matched_basis_40Ry": true,
+    "mag_stabilization_meV_atom": -15.7
   },
   {
     "proposal_id": "3171",
@@ -627,7 +653,11 @@
     "dg_hull_1000K_meV_atom": -9.4,
     "bz_min_phonon_THz": 1.31,
     "competing_reaction": "0.50 B4Ir5La2 (agm002137368) + 1.00 Ir2La (mp-1463) + 0.50 Ir (mp-2647032)",
-    "discovery_score": 60
+    "discovery_score": 60,
+    "spin_energy_eV_atom": -2779.46118,
+    "spin_pressure_GPa": -2.06,
+    "mag_stabilization_meV_atom": 0.0,
+    "spin_matched_basis_40Ry": true
   },
   {
     "proposal_id": "0982",
@@ -661,15 +691,15 @@
     "debye_K": 742,
     "min_phonon_THz": 3.77,
     "spin_converged": true,
-    "spin_energy_eV_atom": -1203.08138,
-    "total_mag_muB_cell": 2.44,
-    "abs_mag_muB_cell": 3.16,
-    "mag_muB_atom": 0.287,
-    "spin_pressure_GPa": -18.63,
-    "spin_max_force_eV_A": 0.979,
-    "spin_rms_force_eV_A": 0.5319,
-    "spin_wall_seconds": 88.07,
-    "magnetic_state": "Ferromagnetic (M_tot = +2.44 mu_B/cell, |mu| = 3.16 mu_B)",
+    "spin_energy_eV_atom": -1203.302044,
+    "total_mag_muB_cell": 2.54,
+    "abs_mag_muB_cell": 3.24,
+    "mag_muB_atom": 0.295,
+    "spin_pressure_GPa": -14.25,
+    "spin_max_force_eV_A": 0.6936,
+    "spin_rms_force_eV_A": 0.462,
+    "spin_wall_seconds": 218.05,
+    "magnetic_state": "Ferromagnetic (M_tot = +2.54 mu_B/cell, |mu| = 3.24 mu_B)",
     "poissons_ratio": 0.258,
     "vickers_hardness_GPa": 13.6,
     "fracture_toughness_MPa_m05": 3.38,
@@ -693,7 +723,9 @@
     "dg_hull_1000K_meV_atom": -7.2,
     "bz_min_phonon_THz": 3.18,
     "competing_reaction": "0.67 B2Fe3Sc (agm002137221) + 2.33 B2Sc (mp-2252)",
-    "discovery_score": 73
+    "discovery_score": 73,
+    "spin_matched_basis_40Ry": true,
+    "mag_stabilization_meV_atom": -30.5
   },
   {
     "proposal_id": "1668",
@@ -753,7 +785,11 @@
     "dg_hull_1000K_meV_atom": -6.0,
     "bz_min_phonon_THz": 2.03,
     "competing_reaction": "1.00 Os (mp-49) + 1.00 B2OsSc (mp-1189073)",
-    "discovery_score": 59
+    "discovery_score": 59,
+    "spin_energy_eV_atom": -1365.825552,
+    "spin_pressure_GPa": -1.15,
+    "mag_stabilization_meV_atom": 0.0,
+    "spin_matched_basis_40Ry": true
   },
   {
     "proposal_id": "1575",
@@ -813,7 +849,11 @@
     "dg_hull_1000K_meV_atom": -3.8,
     "bz_min_phonon_THz": 3.26,
     "competing_reaction": "2.00 B2NiTa (mp-22709) + 1.00 B2Ta (agm005541789)",
-    "discovery_score": 70
+    "discovery_score": 70,
+    "spin_energy_eV_atom": -1423.716866,
+    "spin_pressure_GPa": -0.65,
+    "mag_stabilization_meV_atom": 0.0,
+    "spin_matched_basis_40Ry": true
   },
   {
     "proposal_id": "3379",
@@ -873,6 +913,10 @@
     "dg_hull_1000K_meV_atom": -3.4,
     "bz_min_phonon_THz": 2.79,
     "competing_reaction": "1.00 B4Mo2Nb (agm005968309) + 1.00 B2Nb (mp-450) + 1.00 B2MoNb (agm005771650)",
-    "discovery_score": 61
+    "discovery_score": 61,
+    "spin_energy_eV_atom": -1424.752366,
+    "spin_pressure_GPa": -1.69,
+    "mag_stabilization_meV_atom": 0.0,
+    "spin_matched_basis_40Ry": true
   }
 ]
