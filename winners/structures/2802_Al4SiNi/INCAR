@@ -1,0 +1,18 @@
+# Turnkey PBE Spin-Polarized (FM) DFT Relaxation for Discovery 2802: Al4SiNi R-3m (#166)
+# Competing Hull Reaction: 1.00 Al2Ni (agm002133519) + 2.00 Al (mp-134) + 1.00 Si (mp-149)
+SYSTEM = Al4SiNi_2802
+PREC = Accurate
+ENCUT = 520
+EDIFF = 1E-6
+EDIFFG = -0.01
+IBRION = 2
+ISIF = 3
+NSW = 100
+ISMEAR = 1
+SIGMA = 0.15
+ISPIN = 2
+ISYM = 2
+MAGMOM = 4*0.2 1*0.2 1*1.0
+LREAL = Auto
+LWAVE = .FALSE.
+LCHARG = .FALSE.

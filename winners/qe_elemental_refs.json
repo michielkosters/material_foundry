@@ -1,0 +1,359 @@
+{
+  "Al": {
+    "converged": true,
+    "scf_iterations": 4,
+    "total_energy_Ry": -39.502469,
+    "energy_eV_atom": -537.458474,
+    "fermi_energy_eV": 7.831,
+    "max_force_eV_A": null,
+    "rms_force_eV_A": null,
+    "pressure_kbar": -2.5,
+    "pressure_GPa": -0.25,
+    "wall_seconds": 3.35,
+    "kgrid": [
+      8,
+      8,
+      8
+    ]
+  },
+  "B": {
+    "converged": true,
+    "scf_iterations": 8,
+    "total_energy_Ry": -76.721339,
+    "energy_eV_atom": -86.98725,
+    "fermi_energy_eV": 9.846,
+    "max_force_eV_A": null,
+    "rms_force_eV_A": null,
+    "pressure_kbar": -17.19,
+    "pressure_GPa": -1.72,
+    "wall_seconds": 23.67,
+    "kgrid": [
+      5,
+      5,
+      5
+    ]
+  },
+  "C": {
+    "converged": true,
+    "scf_iterations": 5,
+    "total_energy_Ry": -36.866426,
+    "energy_eV_atom": -250.796642,
+    "fermi_energy_eV": 15.116,
+    "max_force_eV_A": null,
+    "rms_force_eV_A": null,
+    "pressure_kbar": 9.81,
+    "pressure_GPa": 0.98,
+    "wall_seconds": 2.58,
+    "kgrid": [
+      8,
+      8,
+      8
+    ]
+  },
+  "Cr": {
+    "converged": true,
+    "scf_iterations": 7,
+    "total_energy_Ry": -175.49168,
+    "energy_eV_atom": -2387.685938,
+    "fermi_energy_eV": 18.463,
+    "max_force_eV_A": null,
+    "rms_force_eV_A": null,
+    "pressure_kbar": -95.84,
+    "pressure_GPa": -9.58,
+    "wall_seconds": 3.06,
+    "kgrid": [
+      8,
+      8,
+      8
+    ]
+  },
+  "Cu": {
+    "converged": true,
+    "scf_iterations": 13,
+    "total_energy_Ry": -403.779832,
+    "energy_eV_atom": -5493.704481,
+    "fermi_energy_eV": 16.064,
+    "max_force_eV_A": null,
+    "rms_force_eV_A": null,
+    "pressure_kbar": 87.29,
+    "pressure_GPa": 8.73,
+    "wall_seconds": 3.89,
+    "kgrid": [
+      8,
+      8,
+      8
+    ]
+  },
+  "Fe": {
+    "converged": true,
+    "scf_iterations": 5,
+    "total_energy_Ry": -329.146614,
+    "energy_eV_atom": -4478.267818,
+    "fermi_energy_eV": 17.689,
+    "max_force_eV_A": null,
+    "rms_force_eV_A": null,
+    "pressure_kbar": -872.84,
+    "pressure_GPa": -87.28,
+    "wall_seconds": 3.49,
+    "kgrid": [
+      8,
+      8,
+      8
+    ]
+  },
+  "Ir": {
+    "converged": true,
+    "scf_iterations": 6,
+    "total_energy_Ry": -181.77383,
+    "energy_eV_atom": -2473.158945,
+    "fermi_energy_eV": 24.98,
+    "max_force_eV_A": null,
+    "rms_force_eV_A": null,
+    "pressure_kbar": 95.66,
+    "pressure_GPa": 9.57,
+    "wall_seconds": 3.48,
+    "kgrid": [
+      8,
+      8,
+      8
+    ]
+  },
+  "La": {
+    "converged": true,
+    "scf_iterations": 5,
+    "total_energy_Ry": -458.229862,
+    "energy_eV_atom": -6234.534879,
+    "fermi_energy_eV": 11.037,
+    "max_force_eV_A": null,
+    "rms_force_eV_A": null,
+    "pressure_kbar": -0.88,
+    "pressure_GPa": -0.09,
+    "wall_seconds": 9.25,
+    "kgrid": [
+      6,
+      6,
+      6
+    ]
+  },
+  "Lu": {
+    "converged": true,
+    "scf_iterations": 7,
+    "total_energy_Ry": -2160.327366,
+    "energy_eV_atom": -14696.375592,
+    "fermi_energy_eV": 14.036,
+    "max_force_eV_A": null,
+    "rms_force_eV_A": null,
+    "pressure_kbar": 8.04,
+    "pressure_GPa": 0.8,
+    "wall_seconds": 22.29,
+    "kgrid": [
+      7,
+      7,
+      5
+    ]
+  },
+  "Mn": {
+    "converged": true,
+    "scf_iterations": 5,
+    "total_energy_Ry": -211.186453,
+    "energy_eV_atom": -2873.338067,
+    "fermi_energy_eV": 17.429,
+    "max_force_eV_A": null,
+    "rms_force_eV_A": null,
+    "pressure_kbar": -283.76,
+    "pressure_GPa": -28.38,
+    "wall_seconds": 2.81,
+    "kgrid": [
+      8,
+      8,
+      8
+    ]
+  },
+  "Mo": {
+    "converged": true,
+    "scf_iterations": 5,
+    "total_energy_Ry": -137.143896,
+    "energy_eV_atom": -1865.93776,
+    "fermi_energy_eV": 21.261,
+    "max_force_eV_A": null,
+    "rms_force_eV_A": null,
+    "pressure_kbar": 32.01,
+    "pressure_GPa": 3.2,
+    "wall_seconds": 2.74,
+    "kgrid": [
+      8,
+      8,
+      8
+    ]
+  },
+  "Nb": {
+    "converged": true,
+    "scf_iterations": 6,
+    "total_energy_Ry": -334.266471,
+    "energy_eV_atom": -4547.92703,
+    "fermi_energy_eV": 17.899,
+    "max_force_eV_A": null,
+    "rms_force_eV_A": null,
+    "pressure_kbar": 16.67,
+    "pressure_GPa": 1.67,
+    "wall_seconds": 4.23,
+    "kgrid": [
+      8,
+      8,
+      8
+    ]
+  },
+  "Ni": {
+    "converged": true,
+    "scf_iterations": 8,
+    "total_energy_Ry": -343.271272,
+    "energy_eV_atom": -4670.443583,
+    "fermi_energy_eV": 17.557,
+    "max_force_eV_A": null,
+    "rms_force_eV_A": null,
+    "pressure_kbar": -66.89,
+    "pressure_GPa": -6.69,
+    "wall_seconds": 3.22,
+    "kgrid": [
+      8,
+      8,
+      8
+    ]
+  },
+  "Os": {
+    "converged": true,
+    "scf_iterations": 7,
+    "total_energy_Ry": -397.158934,
+    "energy_eV_atom": -2701.811287,
+    "fermi_energy_eV": 26.365,
+    "max_force_eV_A": null,
+    "rms_force_eV_A": null,
+    "pressure_kbar": 84.65,
+    "pressure_GPa": 8.46,
+    "wall_seconds": 9.55,
+    "kgrid": [
+      8,
+      8,
+      6
+    ]
+  },
+  "Sc": {
+    "converged": true,
+    "scf_iterations": 7,
+    "total_energy_Ry": -183.729554,
+    "energy_eV_atom": -1249.883967,
+    "fermi_energy_eV": 9.305,
+    "max_force_eV_A": null,
+    "rms_force_eV_A": null,
+    "pressure_kbar": -7.65,
+    "pressure_GPa": -0.77,
+    "wall_seconds": 4.9,
+    "kgrid": [
+      7,
+      7,
+      5
+    ]
+  },
+  "Si": {
+    "converged": true,
+    "scf_iterations": 5,
+    "total_energy_Ry": -22.838841,
+    "energy_eV_atom": -155.369128,
+    "fermi_energy_eV": 6.171,
+    "max_force_eV_A": null,
+    "rms_force_eV_A": null,
+    "pressure_kbar": 19.18,
+    "pressure_GPa": 1.92,
+    "wall_seconds": 4.18,
+    "kgrid": [
+      6,
+      6,
+      6
+    ]
+  },
+  "Ta": {
+    "converged": true,
+    "scf_iterations": 5,
+    "total_energy_Ry": -141.88048,
+    "energy_eV_atom": -1930.382273,
+    "fermi_energy_eV": 18.628,
+    "max_force_eV_A": null,
+    "rms_force_eV_A": null,
+    "pressure_kbar": -9.4,
+    "pressure_GPa": -0.94,
+    "wall_seconds": 3.82,
+    "kgrid": [
+      8,
+      8,
+      8
+    ]
+  },
+  "Ti": {
+    "converged": true,
+    "scf_iterations": 10,
+    "total_energy_Ry": -238.501002,
+    "energy_eV_atom": -1622.485719,
+    "fermi_energy_eV": 13.113,
+    "max_force_eV_A": null,
+    "rms_force_eV_A": null,
+    "pressure_kbar": -20.02,
+    "pressure_GPa": -2.0,
+    "wall_seconds": 6.68,
+    "kgrid": [
+      8,
+      8,
+      5
+    ]
+  },
+  "V": {
+    "converged": true,
+    "scf_iterations": 6,
+    "total_energy_Ry": -145.074606,
+    "energy_eV_atom": -1973.840573,
+    "fermi_energy_eV": 16.011,
+    "max_force_eV_A": null,
+    "rms_force_eV_A": null,
+    "pressure_kbar": -71.99,
+    "pressure_GPa": -7.2,
+    "wall_seconds": 3.12,
+    "kgrid": [
+      8,
+      8,
+      8
+    ]
+  },
+  "W": {
+    "converged": true,
+    "scf_iterations": 5,
+    "total_energy_Ry": -159.136473,
+    "energy_eV_atom": -2165.162017,
+    "fermi_energy_eV": 22.335,
+    "max_force_eV_A": null,
+    "rms_force_eV_A": null,
+    "pressure_kbar": 25.86,
+    "pressure_GPa": 2.59,
+    "wall_seconds": 3.78,
+    "kgrid": [
+      8,
+      8,
+      8
+    ]
+  },
+  "Zr": {
+    "converged": true,
+    "scf_iterations": 6,
+    "total_energy_Ry": -198.305335,
+    "energy_eV_atom": -1349.04077,
+    "fermi_energy_eV": 14.163,
+    "max_force_eV_A": null,
+    "rms_force_eV_A": null,
+    "pressure_kbar": 7.24,
+    "pressure_GPa": 0.72,
+    "wall_seconds": 5.82,
+    "kgrid": [
+      7,
+      7,
+      5
+    ]
+  }
+}

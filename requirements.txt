@@ -1,0 +1,7 @@
+numpy>=1.26.0
+scipy>=1.11.0
+ase>=3.23.0
+pymatgen>=2024.5.1
+pyxtal>=1.0.0
+torch>=2.2.0
+mace-torch>=0.3.6

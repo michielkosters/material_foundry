@@ -1,0 +1,52 @@
+&CONTROL
+  calculation = 'scf',
+  restart_mode = 'from_scratch',
+  pseudo_dir = './pseudos/sssp_efficiency',
+  outdir = './out',
+  prefix = 'pwscf_spin',
+  tprnfor = .true.,
+  tstress = .true.,
+  verbosity = 'low',
+  disk_io = 'none',
+/
+&SYSTEM
+  ibrav = 0,
+  nat = 11,
+  ntyp = 3,
+  ecutwfc = 36.0,
+  ecutrho = 288.0,
+  nspin = 2,
+  occupations = 'smearing',
+  smearing = 'mv',
+  degauss = 0.020,
+  starting_magnetization(1) = 0.020,
+  starting_magnetization(2) = 0.450,
+  starting_magnetization(3) = 0.020,
+/
+&ELECTRONS
+  conv_thr = 1.0d-5,
+  mixing_beta = 0.30,
+  electron_maxstep = 150,
+/
+ATOMIC_SPECIES
+  B       10.8100  b_pbe_v1.4.uspp.F.UPF
+  Fe      55.8450  Fe.pbe-spn-kjpaw_psl.0.2.1.UPF
+  Sc      44.9559  Sc_ONCV_PBE-1.0.oncvpsp.upf
+CELL_PARAMETERS {angstrom}
+     -3.2019757225      0.0000000000      0.0000000000
+     -0.0000000000     -3.5442870537      0.0000000000
+      1.6009878613      1.7721435269      9.8279686216
+ATOMIC_POSITIONS {crystal}
+  Sc       1.0000000000      0.5000000000      0.0000000000
+  Sc       0.3641783418      0.3641783418      0.7283566836
+  Sc       0.6358216582      0.6358216582      0.2716433164
+  Fe       0.2472361380      0.7472361380      0.4944722760
+  Fe       0.7527638620      0.2527638620      0.5055277240
+  B        0.1836873483      0.1836873483      0.3673746967
+  B        0.8163126517      0.8163126517      0.6326253033
+  B        0.4546007763      0.9546007763      0.9092015526
+  B        0.5453992237      0.0453992237      0.0907984474
+  B        0.0922941613      0.0922941613      0.1845883227
+  B        0.9077058387      0.9077058387      0.8154116773
+K_POINTS {automatic}
+  7 6 2 0 0 0

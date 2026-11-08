@@ -1,0 +1,18 @@
+# Turnkey PBE Spin-Polarized (FM) DFT Relaxation for Discovery 0982: Sc3(FeB3)2 Immm (#71)
+# Competing Hull Reaction: 0.67 B2Fe3Sc (agm002137221) + 2.33 B2Sc (mp-2252)
+SYSTEM = Sc3(FeB3)2_0982
+PREC = Accurate
+ENCUT = 520
+EDIFF = 1E-6
+EDIFFG = -0.01
+IBRION = 2
+ISIF = 3
+NSW = 100
+ISMEAR = 1
+SIGMA = 0.15
+ISPIN = 2
+ISYM = 2
+MAGMOM = 3*0.2 2*2.5 6*0.2
+LREAL = Auto
+LWAVE = .FALSE.
+LCHARG = .FALSE.

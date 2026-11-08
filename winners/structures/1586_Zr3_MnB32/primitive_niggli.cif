@@ -1,0 +1,37 @@
+# generated using pymatgen
+data_Zr3(MnB3)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.24106018
+_cell_length_b   3.51810315
+_cell_length_c   10.38409094
+_cell_angle_alpha   99.75286045
+_cell_angle_beta   98.97821572
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Zr3(MnB3)2
+_chemical_formula_sum   'Zr3 Mn2 B6'
+_cell_volume   115.21992818
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Zr  Zr0  1  0.50000000  1.00000000  0.00000000  1
+  Zr  Zr1  1  0.86335245  0.86335245  0.72670489  1
+  Zr  Zr2  1  0.13664755  0.13664755  0.27329511  1
+  Mn  Mn3  1  0.74827185  0.24827185  0.49654370  1
+  Mn  Mn4  1  0.25172815  0.75172815  0.50345630  1
+  B  B5  1  0.68352730  0.68352730  0.36705461  1
+  B  B6  1  0.31647270  0.31647270  0.63294539  1
+  B  B7  1  0.95531160  0.45531160  0.91062319  1
+  B  B8  1  0.04468840  0.54468840  0.08937681  1
+  B  B9  1  0.59250321  0.59250321  0.18500642  1
+  B  B10  1  0.40749679  0.40749679  0.81499358  1

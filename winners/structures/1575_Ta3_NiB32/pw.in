@@ -1,0 +1,51 @@
+&CONTROL
+  calculation = 'vc-relax',
+  prefix = 'Ta3(NiB3)2_1575',
+  pseudo_dir = './pseudo/',
+  outdir = './out/',
+  etot_conv_thr = 1.0d-5,
+  forc_conv_thr = 1.0d-4,
+/
+&SYSTEM
+  ibrav = 0,
+  nat = 11,
+  ntyp = 3,
+  ecutwfc = 60.0,
+  ecutrho = 480.0,
+  occupations = 'smearing',
+  smearing = 'mv',
+  degauss = 0.015,
+  nspin = 2,
+/
+&ELECTRONS
+  conv_thr = 1.0d-8,
+  mixing_beta = 0.4,
+/
+&IONS
+  ion_dynamics = 'bfgs',
+/
+&CELL
+  cell_dynamics = 'bfgs',
+/
+ATOMIC_SPECIES
+  B  10.8100  B.UPF
+  Ni  58.6934  Ni.UPF
+  Ta  180.9479  Ta.UPF
+CELL_PARAMETERS (angstrom)
+      3.155241      0.000000     -0.511930
+     -0.090502      3.290597     -0.557805
+     -0.001929     -0.004217      9.967610
+ATOMIC_POSITIONS (crystal)
+  Ta      0.500000      0.500000      0.000000
+  Ta      0.865724      0.365724      0.731448
+  Ta      0.134276      0.634276      0.268552
+  Ni      0.748885      0.748885      0.497769
+  Ni      0.251115      0.251115      0.502231
+  B      0.682445      0.182445      0.364889
+  B      0.317555      0.817555      0.635111
+  B      0.954607      0.954607      0.909213
+  B      0.045393      0.045393      0.090787
+  B      0.592088      0.092088      0.184175
+  B      0.407912      0.907912      0.815825
+K_POINTS {automatic}
+  6 6 6 0 0 0

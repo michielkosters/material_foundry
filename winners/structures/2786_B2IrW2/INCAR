@@ -1,0 +1,18 @@
+# Turnkey PBE Spin-Polarized (FM) DFT Relaxation for Discovery 2786: B2IrW2 Pnnm (#58)
+# Competing Hull Reaction: 1.58 BW (agm003263694) + 0.08 B5Ir3W2 (agm003206773) + 0.25 Ir3W (mp-30745)
+SYSTEM = B2IrW2_2786
+PREC = Accurate
+ENCUT = 520
+EDIFF = 1E-6
+EDIFFG = -0.01
+IBRION = 2
+ISIF = 3
+NSW = 100
+ISMEAR = 1
+SIGMA = 0.15
+ISPIN = 2
+ISYM = 2
+MAGMOM = 8*0.2 4*0.2 8*0.2
+LREAL = Auto
+LWAVE = .FALSE.
+LCHARG = .FALSE.

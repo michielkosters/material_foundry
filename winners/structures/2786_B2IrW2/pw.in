@@ -1,0 +1,62 @@
+&CONTROL
+  calculation = 'vc-relax',
+  prefix = 'B2IrW2_2786',
+  pseudo_dir = './pseudos/sssp_efficiency',
+  outdir = './out/',
+  tprnfor = .true.,
+  tstress = .true.,
+  etot_conv_thr = 1.0d-5,
+  forc_conv_thr = 1.0d-4,
+/
+&SYSTEM
+  ibrav = 0,
+  nat = 20,
+  ntyp = 3,
+  ecutwfc = 60.0,
+  ecutrho = 480.0,
+  occupations = 'smearing',
+  smearing = 'mv',
+  degauss = 0.015,
+  nspin = 1,
+/
+&ELECTRONS
+  conv_thr = 1.0d-8,
+  mixing_beta = 0.4,
+/
+&IONS
+  ion_dynamics = 'bfgs',
+/
+&CELL
+  cell_dynamics = 'bfgs',
+/
+ATOMIC_SPECIES
+  B  10.8100  B.UPF
+  Ir  192.2170  Ir.UPF
+  W  183.8400  W.UPF
+CELL_PARAMETERS (angstrom)
+      3.179793     -0.000000     -0.000000
+      0.000000      7.483877      0.000000
+     -0.000000     -0.000000      9.578055
+ATOMIC_POSITIONS (crystal)
+  B      0.500000      0.123301      0.764776
+  B     -0.000000      0.615781      0.539882
+  B      0.000000      0.384219      0.460118
+  B     -0.000000      0.376699      0.264776
+  B      0.500000      0.115781      0.960118
+  B     -0.000000      0.623301      0.735224
+  B      0.500000      0.876699      0.235224
+  B      0.500000      0.884219      0.039882
+  Ir      0.500000      0.622317      0.888315
+  Ir      0.000000      0.122317      0.611685
+  Ir      0.000000      0.877683      0.388315
+  Ir      0.500000      0.377683      0.111685
+  W      0.500000      0.426148      0.638789
+  W      0.000000      0.073852      0.138789
+  W      0.000000      0.690793      0.130653
+  W      0.500000      0.809207      0.630653
+  W      0.500000      0.190793      0.369347
+  W     -0.000000      0.309207      0.869347
+  W      0.500000      0.573852      0.361211
+  W     -0.000000      0.926148      0.861211
+K_POINTS {automatic}
+  8 4 3 0 0 0

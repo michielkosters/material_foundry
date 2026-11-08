@@ -1,0 +1,51 @@
+&CONTROL
+  calculation = 'vc-relax',
+  prefix = 'Zr3(MnB3)2_1586',
+  pseudo_dir = './pseudo/',
+  outdir = './out/',
+  etot_conv_thr = 1.0d-5,
+  forc_conv_thr = 1.0d-4,
+/
+&SYSTEM
+  ibrav = 0,
+  nat = 11,
+  ntyp = 3,
+  ecutwfc = 60.0,
+  ecutrho = 480.0,
+  occupations = 'smearing',
+  smearing = 'mv',
+  degauss = 0.015,
+  nspin = 2,
+/
+&ELECTRONS
+  conv_thr = 1.0d-8,
+  mixing_beta = 0.4,
+/
+&IONS
+  ion_dynamics = 'bfgs',
+/
+&CELL
+  cell_dynamics = 'bfgs',
+/
+ATOMIC_SPECIES
+  B  10.8100  B.UPF
+  Mn  54.9380  Mn.UPF
+  Zr  91.2240  Zr.UPF
+CELL_PARAMETERS (angstrom)
+      3.201319      0.000000     -0.505992
+     -0.093974      3.466226     -0.594557
+      0.000633     -0.004193     10.384090
+ATOMIC_POSITIONS (crystal)
+  Zr      0.500000      0.000000      0.000000
+  Zr      0.863352      0.863352      0.726705
+  Zr      0.136648      0.136648      0.273295
+  Mn      0.748272      0.248272      0.496544
+  Mn      0.251728      0.751728      0.503456
+  B      0.683527      0.683527      0.367055
+  B      0.316473      0.316473      0.632945
+  B      0.955312      0.455312      0.910623
+  B      0.044688      0.544688      0.089377
+  B      0.592503      0.592503      0.185006
+  B      0.407497      0.407497      0.814994
+K_POINTS {automatic}
+  6 6 6 0 0 0

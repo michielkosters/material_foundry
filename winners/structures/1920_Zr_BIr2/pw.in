@@ -1,0 +1,45 @@
+&CONTROL
+  calculation = 'vc-relax',
+  prefix = 'Zr(BIr)2_1920',
+  pseudo_dir = './pseudo/',
+  outdir = './out/',
+  etot_conv_thr = 1.0d-5,
+  forc_conv_thr = 1.0d-4,
+/
+&SYSTEM
+  ibrav = 0,
+  nat = 5,
+  ntyp = 3,
+  ecutwfc = 60.0,
+  ecutrho = 480.0,
+  occupations = 'smearing',
+  smearing = 'mv',
+  degauss = 0.015,
+  nspin = 2,
+/
+&ELECTRONS
+  conv_thr = 1.0d-8,
+  mixing_beta = 0.4,
+/
+&IONS
+  ion_dynamics = 'bfgs',
+/
+&CELL
+  cell_dynamics = 'bfgs',
+/
+ATOMIC_SPECIES
+  B  10.8100  B.UPF
+  Ir  192.2170  Ir.UPF
+  Zr  91.2240  Zr.UPF
+CELL_PARAMETERS (angstrom)
+      3.536776      0.000000     -1.409545
+     -0.561760      3.491878     -1.409545
+     -0.000031     -0.000037      5.141864
+ATOMIC_POSITIONS (crystal)
+  Zr      0.000000      0.000000      0.000000
+  B      0.396896      0.396896      0.793792
+  B      0.603104      0.603104      0.206208
+  Ir      0.250000      0.750000      0.500000
+  Ir      0.750000      0.250000      0.500000
+K_POINTS {automatic}
+  6 6 6 0 0 0

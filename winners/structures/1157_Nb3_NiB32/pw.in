@@ -1,0 +1,51 @@
+&CONTROL
+  calculation = 'vc-relax',
+  prefix = 'Nb3(NiB3)2_1157',
+  pseudo_dir = './pseudo/',
+  outdir = './out/',
+  etot_conv_thr = 1.0d-5,
+  forc_conv_thr = 1.0d-4,
+/
+&SYSTEM
+  ibrav = 0,
+  nat = 11,
+  ntyp = 3,
+  ecutwfc = 60.0,
+  ecutrho = 480.0,
+  occupations = 'smearing',
+  smearing = 'mv',
+  degauss = 0.015,
+  nspin = 2,
+/
+&ELECTRONS
+  conv_thr = 1.0d-8,
+  mixing_beta = 0.4,
+/
+&IONS
+  ion_dynamics = 'bfgs',
+/
+&CELL
+  cell_dynamics = 'bfgs',
+/
+ATOMIC_SPECIES
+  B  10.8100  B.UPF
+  Nb  92.9064  Nb.UPF
+  Ni  58.6934  Ni.UPF
+CELL_PARAMETERS (angstrom)
+      3.169909      0.000000     -0.515105
+     -0.090854      3.297802     -0.559171
+      0.000000      0.000000     10.009993
+ATOMIC_POSITIONS (crystal)
+  Nb      0.367008      0.866641      0.733328
+  Nb      0.633940      0.133629      0.266833
+  Nb      0.999139      0.000070      0.000007
+  Ni      0.248690      0.249961      0.499307
+  Ni      0.750043      0.750010      0.501064
+  B      0.091285      0.592059      0.184169
+  B      0.183510      0.684179      0.367005
+  B      0.453384      0.454127      0.908762
+  B      0.543965      0.545885      0.091284
+  B      0.816177      0.315799      0.633324
+  B      0.907678      0.408089      0.815928
+K_POINTS {automatic}
+  6 6 6 0 0 0

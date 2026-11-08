@@ -1,0 +1,51 @@
+&CONTROL
+  calculation = 'vc-relax',
+  prefix = 'Sc3(FeB3)2_0982',
+  pseudo_dir = './pseudo/',
+  outdir = './out/',
+  etot_conv_thr = 1.0d-5,
+  forc_conv_thr = 1.0d-4,
+/
+&SYSTEM
+  ibrav = 0,
+  nat = 11,
+  ntyp = 3,
+  ecutwfc = 60.0,
+  ecutrho = 480.0,
+  occupations = 'smearing',
+  smearing = 'mv',
+  degauss = 0.015,
+  nspin = 2,
+/
+&ELECTRONS
+  conv_thr = 1.0d-8,
+  mixing_beta = 0.4,
+/
+&IONS
+  ion_dynamics = 'bfgs',
+/
+&CELL
+  cell_dynamics = 'bfgs',
+/
+ATOMIC_SPECIES
+  B  10.8100  B.UPF
+  Fe  55.8450  Fe.UPF
+  Sc  44.9559  Sc.UPF
+CELL_PARAMETERS (angstrom)
+     -3.201976      0.000000      0.000000
+     -0.000000     -3.544287      0.000000
+      1.600988      1.772144      9.827969
+ATOMIC_POSITIONS (crystal)
+  Sc      1.000000      0.500000      0.000000
+  Sc      0.364178      0.364178      0.728357
+  Sc      0.635822      0.635822      0.271643
+  Fe      0.247236      0.747236      0.494472
+  Fe      0.752764      0.252764      0.505528
+  B      0.183687      0.183687      0.367375
+  B      0.816313      0.816313      0.632625
+  B      0.454601      0.954601      0.909202
+  B      0.545399      0.045399      0.090798
+  B      0.092294      0.092294      0.184588
+  B      0.907706      0.907706      0.815412
+K_POINTS {automatic}
+  6 6 6 0 0 0

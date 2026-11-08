@@ -1,0 +1,18 @@
+# Turnkey PBE Spin-Polarized (FM) DFT Relaxation for Discovery 2575: V4SiC3 P6_3/mmc (#194)
+# Competing Hull Reaction: 0.17 C5V6 (agm003242071) + 0.17 C (mp-937760) + 1.00 C2SiV3 (agm002139633)
+SYSTEM = V4SiC3_2575
+PREC = Accurate
+ENCUT = 520
+EDIFF = 1E-6
+EDIFFG = -0.01
+IBRION = 2
+ISIF = 3
+NSW = 100
+ISMEAR = 1
+SIGMA = 0.15
+ISPIN = 2
+ISYM = 2
+MAGMOM = 8*0.2 2*0.2 6*0.2
+LREAL = Auto
+LWAVE = .FALSE.
+LCHARG = .FALSE.

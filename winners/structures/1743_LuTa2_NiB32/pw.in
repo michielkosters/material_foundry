@@ -1,0 +1,52 @@
+&CONTROL
+  calculation = 'vc-relax',
+  prefix = 'LuTa2(NiB3)2_1743',
+  pseudo_dir = './pseudo/',
+  outdir = './out/',
+  etot_conv_thr = 1.0d-5,
+  forc_conv_thr = 1.0d-4,
+/
+&SYSTEM
+  ibrav = 0,
+  nat = 11,
+  ntyp = 4,
+  ecutwfc = 60.0,
+  ecutrho = 480.0,
+  occupations = 'smearing',
+  smearing = 'mv',
+  degauss = 0.015,
+  nspin = 2,
+/
+&ELECTRONS
+  conv_thr = 1.0d-8,
+  mixing_beta = 0.4,
+/
+&IONS
+  ion_dynamics = 'bfgs',
+/
+&CELL
+  cell_dynamics = 'bfgs',
+/
+ATOMIC_SPECIES
+  B  10.8100  B.UPF
+  Lu  174.9668  Lu.UPF
+  Ni  58.6934  Ni.UPF
+  Ta  180.9479  Ta.UPF
+CELL_PARAMETERS (angstrom)
+      3.168249     -0.000000     -0.511500
+     -0.095819      3.405983     -0.593504
+      0.000848     -0.000750     10.073131
+ATOMIC_POSITIONS (crystal)
+  Lu      0.500000     -0.000000     -0.000000
+  Ta      0.861101      0.861101      0.722202
+  Ta      0.138899      0.138899      0.277798
+  Ni      0.748545      0.248545      0.497091
+  Ni      0.251455      0.751455      0.502909
+  B      0.685295      0.685295      0.370591
+  B      0.314705      0.314705      0.629409
+  B      0.950524      0.450524      0.901048
+  B      0.049476      0.549476      0.098952
+  B      0.596809      0.596809      0.193618
+  B      0.403191      0.403191      0.806382
+K_POINTS {automatic}
+  6 6 6 0 0 0

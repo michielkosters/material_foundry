@@ -1,0 +1,56 @@
+&CONTROL
+  calculation = 'vc-relax',
+  prefix = 'V4SiC3_2575',
+  pseudo_dir = './pseudo/',
+  outdir = './out/',
+  etot_conv_thr = 1.0d-5,
+  forc_conv_thr = 1.0d-4,
+/
+&SYSTEM
+  ibrav = 0,
+  nat = 16,
+  ntyp = 3,
+  ecutwfc = 60.0,
+  ecutrho = 480.0,
+  occupations = 'smearing',
+  smearing = 'mv',
+  degauss = 0.015,
+  nspin = 2,
+/
+&ELECTRONS
+  conv_thr = 1.0d-8,
+  mixing_beta = 0.4,
+/
+&IONS
+  ion_dynamics = 'bfgs',
+/
+&CELL
+  cell_dynamics = 'bfgs',
+/
+ATOMIC_SPECIES
+  C  12.0110  C.UPF
+  Si  28.0850  Si.UPF
+  V  50.9415  V.UPF
+CELL_PARAMETERS (angstrom)
+      2.935193      0.000000      0.000000
+     -1.467597      2.541952      0.000000
+     -0.000000     -0.000000     21.989512
+ATOMIC_POSITIONS (crystal)
+  V      0.333333      0.666667      0.554665
+  V      0.666667      0.333333      0.445335
+  V      0.666667      0.333333      0.054665
+  V      0.333333      0.666667      0.945335
+  V     -0.000000      0.000000      0.659269
+  V     -0.000000      0.000000      0.340731
+  V     -0.000000      0.000000      0.159269
+  V     -0.000000      0.000000      0.840731
+  Si      0.333333      0.666667      0.750000
+  Si      0.666667      0.333333      0.250000
+  C     -0.000000      0.000000      0.500000
+  C     -0.000000      0.000000     -0.000000
+  C      0.666667      0.333333      0.610224
+  C      0.333333      0.666667      0.389776
+  C      0.333333      0.666667      0.110224
+  C      0.666667      0.333333      0.889776
+K_POINTS {automatic}
+  6 6 6 0 0 0

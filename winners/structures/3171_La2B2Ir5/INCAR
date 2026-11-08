@@ -1,0 +1,18 @@
+# Turnkey PBE Spin-Polarized (FM) DFT Relaxation for Discovery 3171: La2B2Ir5 R-3m (#166)
+# Competing Hull Reaction: 0.50 B4Ir5La2 (agm002137368) + 1.00 Ir2La (mp-1463) + 0.50 Ir (mp-2647032)
+SYSTEM = La2B2Ir5_3171
+PREC = Accurate
+ENCUT = 520
+EDIFF = 1E-6
+EDIFFG = -0.01
+IBRION = 2
+ISIF = 3
+NSW = 100
+ISMEAR = 1
+SIGMA = 0.15
+ISPIN = 2
+ISYM = 2
+MAGMOM = 4*0.2 4*0.2 10*0.2
+LREAL = Auto
+LWAVE = .FALSE.
+LCHARG = .FALSE.

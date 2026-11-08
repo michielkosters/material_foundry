@@ -1,0 +1,46 @@
+&CONTROL
+  calculation = 'vc-relax',
+  prefix = 'Ti2Al3Cu_0083',
+  pseudo_dir = './pseudo/',
+  outdir = './out/',
+  etot_conv_thr = 1.0d-5,
+  forc_conv_thr = 1.0d-4,
+/
+&SYSTEM
+  ibrav = 0,
+  nat = 6,
+  ntyp = 3,
+  ecutwfc = 60.0,
+  ecutrho = 480.0,
+  occupations = 'smearing',
+  smearing = 'mv',
+  degauss = 0.015,
+  nspin = 2,
+/
+&ELECTRONS
+  conv_thr = 1.0d-8,
+  mixing_beta = 0.4,
+/
+&IONS
+  ion_dynamics = 'bfgs',
+/
+&CELL
+  cell_dynamics = 'bfgs',
+/
+ATOMIC_SPECIES
+  Al  26.9815  Al.UPF
+  Cu  63.5460  Cu.UPF
+  Ti  47.8670  Ti.UPF
+CELL_PARAMETERS (angstrom)
+      4.258003     -2.591627      0.000000
+      4.258003      2.591627      0.000000
+      2.680613      0.000000      4.202551
+ATOMIC_POSITIONS (crystal)
+  Ti      0.620871      0.620871      0.620871
+  Ti      0.379129      0.379129      0.379129
+  Al      0.500000      0.000000      0.000000
+  Al      0.000000      0.000000      0.500000
+  Al      0.000000      0.500000      0.000000
+  Cu      0.000000      0.000000      0.000000
+K_POINTS {automatic}
+  6 6 6 0 0 0

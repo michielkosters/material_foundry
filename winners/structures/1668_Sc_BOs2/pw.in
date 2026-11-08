@@ -1,0 +1,45 @@
+&CONTROL
+  calculation = 'vc-relax',
+  prefix = 'Sc(BOs)2_1668',
+  pseudo_dir = './pseudo/',
+  outdir = './out/',
+  etot_conv_thr = 1.0d-5,
+  forc_conv_thr = 1.0d-4,
+/
+&SYSTEM
+  ibrav = 0,
+  nat = 5,
+  ntyp = 3,
+  ecutwfc = 60.0,
+  ecutrho = 480.0,
+  occupations = 'smearing',
+  smearing = 'mv',
+  degauss = 0.015,
+  nspin = 2,
+/
+&ELECTRONS
+  conv_thr = 1.0d-8,
+  mixing_beta = 0.4,
+/
+&IONS
+  ion_dynamics = 'bfgs',
+/
+&CELL
+  cell_dynamics = 'bfgs',
+/
+ATOMIC_SPECIES
+  B  10.8100  B.UPF
+  Os  190.2300  Os.UPF
+  Sc  44.9559  Sc.UPF
+CELL_PARAMETERS (angstrom)
+      3.488093      0.000000     -1.352477
+     -0.524411      3.448447     -1.352477
+      0.000000      0.000000      5.174205
+ATOMIC_POSITIONS (crystal)
+  Sc      0.000000      0.000000      0.000000
+  B      0.397268      0.397268      0.794535
+  B      0.602732      0.602732      0.205465
+  Os      0.250000      0.750000      0.500000
+  Os      0.750000      0.250000      0.500000
+K_POINTS {automatic}
+  6 6 6 0 0 0

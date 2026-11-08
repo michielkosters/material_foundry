@@ -1,0 +1,37 @@
+# generated using pymatgen
+data_Ta3(NiB3)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.19558634
+_cell_length_b   3.33357690
+_cell_length_c   9.97664454
+_cell_angle_alpha   99.61745050
+_cell_angle_beta   99.21579805
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ta3(NiB3)2
+_chemical_formula_sum   'Ta3 Ni2 B6'
+_cell_volume   103.39316029
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ta  Ta0  1  0.50000000  0.50000000  0.00000000  1
+  Ta  Ta1  1  0.86575389  0.36575389  0.73150777  1
+  Ta  Ta2  1  0.13424611  0.63424611  0.26849223  1
+  Ni  Ni3  1  0.74890843  0.74890843  0.49781687  1
+  Ni  Ni4  1  0.25109157  0.25109157  0.50218313  1
+  B  B5  1  0.68227708  0.18227708  0.36455415  1
+  B  B6  1  0.31772292  0.81772292  0.63544585  1
+  B  B7  1  0.95455716  0.95455716  0.90911432  1
+  B  B8  1  0.04544284  0.04544284  0.09088568  1
+  B  B9  1  0.59191529  0.09191529  0.18383059  1
+  B  B10  1  0.40808471  0.90808471  0.81616941  1
