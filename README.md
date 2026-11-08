@@ -1,5 +1,7 @@
 # Material Foundry: Symmetry-Conditioned Crystal Discovery & Pareto Frontier Winners
 
+> **Built with Gemini Argon:** This autonomous crystal-discovery pipeline, algebraic Wyckoff-flow generator, 5-Gate phonon/elastic verification suite, and first-principles Quantum ESPRESSO 7.6 DFT validation were designed and executed using **Gemini Argon**.
+
 **Material Foundry** is an open, reproducible crystal-discovery and multi-stage verification pipeline that combines **Wyckoff space-group flow**, **Smith-Normal-Form periodic homology**, **MACE-MP-0b3 matched-hull screening** (against a 157,998-phase reference convex hull), **5-Gate phonon/elastic/tribological filtering**, and **first-principles Quantum ESPRESSO 7.6 (`pw.x`, PBE + SSSP 1.1.2) DFT verification**.
 
 Out of **4,324 evaluated crystal proposals** (`0` steric clashes, `315` convex-hull ground states with $\Delta E_{\text{hull}} \le 0$, `254` passing all 5 physical & dynamical gates), **14 non-dominated Pareto Frontier Winners** emerge across four orthogonal functional trade-offs:
