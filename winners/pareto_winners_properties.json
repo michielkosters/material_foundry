@@ -61,7 +61,35 @@
     "spin_energy_eV_atom": -1725.559172,
     "spin_pressure_GPa": -0.59,
     "mag_stabilization_meV_atom": 0.0,
-    "spin_matched_basis_40Ry": true
+    "spin_matched_basis_40Ry": true,
+    "qe_vcrelax_run": "t0083_Ti2Al3Cu",
+    "qe_vcrelax_energy_Ry": -760.95754914,
+    "qe_vcrelax_sp_energy_Ry": -760.95699205,
+    "qe_vcrelax_dE_relax_meV_atom": -1.263,
+    "qe_vcrelax_formation_energy_eV_atom": -0.3839,
+    "qe_vcrelax_vol_change_pct": -0.971,
+    "qe_vcrelax_max_displacement_A": 0.0235,
+    "qe_vcrelax_rms_displacement_A": 0.0136,
+    "qe_vcrelax_min_BB_in_A": null,
+    "qe_vcrelax_min_BB_out_A": null,
+    "qe_hull_depth_meV_atom": 14.19,
+    "qe_hull_binding_phases": [
+      [
+        "c_Al2CuTi",
+        1.0
+      ],
+      [
+        "c_AlTi",
+        1.0
+      ]
+    ],
+    "qe_hull_competitor_pool": [
+      "c_Al2CuTi",
+      "c_Al3Ti_D022",
+      "c_AlTi"
+    ],
+    "qe_hull_verdict": "METASTABLE IN DFT; DISORDERED SOLID SOLUTION POSSIBLE AT HIGH T",
+    "qe_hull_verdict_note": "T*dS_conf(1000 K) = 19.9 meV/atom exceeds the +14.2 hull depth, so a disordered Al/Cu solid solution could be favoured at 1000 K. Not a 0 K ground state."
   },
   {
     "proposal_id": "1743",
@@ -125,7 +153,41 @@
     "spin_energy_eV_atom": -2584.205373,
     "spin_pressure_GPa": -10.03,
     "mag_stabilization_meV_atom": 0.0,
-    "spin_matched_basis_40Ry": true
+    "spin_matched_basis_40Ry": true,
+    "qe_vcrelax_run": "t1743_LuTa2Ni2B6",
+    "qe_vcrelax_energy_Ry": -2089.35493887,
+    "qe_vcrelax_sp_energy_Ry": -2089.3503384,
+    "qe_vcrelax_dE_relax_meV_atom": -5.69,
+    "qe_vcrelax_formation_energy_eV_atom": -0.6519,
+    "qe_vcrelax_vol_change_pct": -0.816,
+    "qe_vcrelax_max_displacement_A": 0.0491,
+    "qe_vcrelax_rms_displacement_A": 0.0261,
+    "qe_vcrelax_min_BB_in_A": 1.7331,
+    "qe_vcrelax_min_BB_out_A": 1.7773,
+    "qe_hull_depth_meV_atom": 3.32,
+    "qe_hull_binding_phases": [
+      [
+        "c_Lu2Ni3B6",
+        0.5
+      ],
+      [
+        "c_Ta3B4",
+        0.5
+      ],
+      [
+        "c_TaNiB2",
+        0.125
+      ]
+    ],
+    "qe_hull_competitor_pool": [
+      "c_Lu2Ni3B6",
+      "c_Ta3B4",
+      "c_TaB2",
+      "c_TaNiB2",
+      "t1575_Ta3Ni2B6"
+    ],
+    "qe_hull_verdict": "METASTABLE IN DFT",
+    "qe_hull_verdict_note": "+3.3 meV/atom above the QE hull \u2014 marginal: only 0.3 meV/atom above the +3 verification line and inside the 3-5 meV/atom pipeline noise. The Lu2Ni3B6 tie-line flipped it from the provisional -181.2; treat as on-the-hull within noise rather than a firm rejection."
   },
   {
     "proposal_id": "1311",
@@ -193,7 +255,35 @@
     "competing_reaction": "0.25 B3Cr5 (mp-15617) + 0.63 B2Zr (mp-1472) + 0.37 Cr2Zr (mp-903)",
     "discovery_score": 70,
     "mag_stabilization_meV_atom": 0.0,
-    "spin_matched_basis_40Ry": true
+    "spin_matched_basis_40Ry": true,
+    "qe_vcrelax_run": "t1311_ZrCr2B2",
+    "qe_vcrelax_energy_Ry": -463.12793805,
+    "qe_vcrelax_sp_energy_Ry": -463.12675272,
+    "qe_vcrelax_dE_relax_meV_atom": -3.225,
+    "qe_vcrelax_formation_energy_eV_atom": -0.5579,
+    "qe_vcrelax_vol_change_pct": -0.814,
+    "qe_vcrelax_max_displacement_A": 0.0119,
+    "qe_vcrelax_rms_displacement_A": 0.0075,
+    "qe_vcrelax_min_BB_in_A": 1.8299,
+    "qe_vcrelax_min_BB_out_A": 1.8216,
+    "qe_hull_depth_meV_atom": 51.46,
+    "qe_hull_binding_phases": [
+      [
+        "c_ZrB2",
+        1.0000000000000002
+      ],
+      [
+        "Cr ref",
+        2.0
+      ]
+    ],
+    "qe_hull_competitor_pool": [
+      "c_Cr2Zr",
+      "c_Cr5B3",
+      "c_ZrB2"
+    ],
+    "qe_hull_verdict": "METASTABLE IN DFT",
+    "qe_hull_verdict_note": "+51.5 meV/atom above the QE hull."
   },
   {
     "proposal_id": "1920",
@@ -257,7 +347,38 @@
     "spin_energy_eV_atom": -1294.553085,
     "spin_pressure_GPa": -4.39,
     "mag_stabilization_meV_atom": 0.0,
-    "spin_matched_basis_40Ry": true
+    "spin_matched_basis_40Ry": true,
+    "qe_vcrelax_run": "t1920_ZrIr2B2",
+    "qe_vcrelax_energy_Ry": -475.74598705,
+    "qe_vcrelax_sp_energy_Ry": -475.74101712,
+    "qe_vcrelax_dE_relax_meV_atom": -13.524,
+    "qe_vcrelax_formation_energy_eV_atom": -0.7041,
+    "qe_vcrelax_vol_change_pct": -1.194,
+    "qe_vcrelax_max_displacement_A": 0.0631,
+    "qe_vcrelax_rms_displacement_A": 0.0399,
+    "qe_vcrelax_min_BB_in_A": 1.8067,
+    "qe_vcrelax_min_BB_out_A": 1.9157,
+    "qe_hull_depth_meV_atom": 24.63,
+    "qe_hull_binding_phases": [
+      [
+        "c_Zr2Ir6B",
+        0.3333333333333333
+      ],
+      [
+        "c_ZrB2",
+        0.33333333333333337
+      ],
+      [
+        "B ref",
+        1.0
+      ]
+    ],
+    "qe_hull_competitor_pool": [
+      "c_Zr2Ir6B",
+      "c_ZrB2"
+    ],
+    "qe_hull_verdict": "METASTABLE IN DFT",
+    "qe_hull_verdict_note": "+24.6 meV/atom above the QE hull."
   },
   {
     "proposal_id": "1157",
@@ -325,7 +446,35 @@
     "competing_reaction": "2.00 B2NbNi (oqmd-9462278) + 1.00 B2Nb (mp-450)",
     "discovery_score": 81,
     "mag_stabilization_meV_atom": 0.0,
-    "spin_matched_basis_40Ry": true
+    "spin_matched_basis_40Ry": true,
+    "qe_vcrelax_run": "t1157_Nb3Ni2B6",
+    "qe_vcrelax_energy_Ry": -1728.24264634,
+    "qe_vcrelax_sp_energy_Ry": -1728.24009672,
+    "qe_vcrelax_dE_relax_meV_atom": -3.154,
+    "qe_vcrelax_formation_energy_eV_atom": -0.6679,
+    "qe_vcrelax_vol_change_pct": -0.433,
+    "qe_vcrelax_max_displacement_A": 0.0287,
+    "qe_vcrelax_rms_displacement_A": 0.0128,
+    "qe_vcrelax_min_BB_in_A": 1.7644,
+    "qe_vcrelax_min_BB_out_A": 1.791,
+    "qe_hull_depth_meV_atom": 0.38,
+    "qe_hull_binding_phases": [
+      [
+        "c_NbB2",
+        1.0
+      ],
+      [
+        "c_NbNiB2",
+        0.5
+      ]
+    ],
+    "qe_hull_competitor_pool": [
+      "c_Nb3B4",
+      "c_NbB2",
+      "c_NbNiB2"
+    ],
+    "qe_hull_verdict": "VERIFIED DFT GROUND STATE (scoped to tested set)",
+    "qe_hull_verdict_note": "At or below the hull within 3-5 meV/atom pipeline noise."
   },
   {
     "proposal_id": "2786",
@@ -389,7 +538,39 @@
     "spin_energy_eV_atom": -1395.812601,
     "spin_pressure_GPa": -1.44,
     "mag_stabilization_meV_atom": 0.0,
-    "spin_matched_basis_40Ry": true
+    "spin_matched_basis_40Ry": true,
+    "qe_vcrelax_run": "t2786_Ir2W2B2",
+    "qe_vcrelax_energy_Ry": -2051.82017399,
+    "qe_vcrelax_sp_energy_Ry": -2051.80667951,
+    "qe_vcrelax_dE_relax_meV_atom": -9.18,
+    "qe_vcrelax_formation_energy_eV_atom": -0.3303,
+    "qe_vcrelax_vol_change_pct": -0.43,
+    "qe_vcrelax_max_displacement_A": 0.0175,
+    "qe_vcrelax_rms_displacement_A": 0.0129,
+    "qe_vcrelax_min_BB_in_A": 1.8718,
+    "qe_vcrelax_min_BB_out_A": 1.8392,
+    "qe_hull_depth_meV_atom": 37.81,
+    "qe_hull_binding_phases": [
+      [
+        "c_Ir3W",
+        0.9999999999999997
+      ],
+      [
+        "c_Ir3W2B5",
+        0.3333333333333335
+      ],
+      [
+        "c_WB",
+        1.583333333333333
+      ]
+    ],
+    "qe_hull_competitor_pool": [
+      "c_Ir3W",
+      "c_Ir3W2B5",
+      "c_WB"
+    ],
+    "qe_hull_verdict": "METASTABLE IN DFT",
+    "qe_hull_verdict_note": "+37.8 meV/atom above the QE hull."
   },
   {
     "proposal_id": "2802",
@@ -457,7 +638,38 @@
     "competing_reaction": "1.00 Al2Ni (agm002133519) + 2.00 Al (mp-134) + 1.00 Si (mp-149)",
     "discovery_score": 55,
     "mag_stabilization_meV_atom": 0.0,
-    "spin_matched_basis_40Ry": true
+    "spin_matched_basis_40Ry": true,
+    "qe_vcrelax_run": "t2802_Al4SiNi",
+    "qe_vcrelax_energy_Ry": -512.81397995,
+    "qe_vcrelax_sp_energy_Ry": -512.81385498,
+    "qe_vcrelax_dE_relax_meV_atom": -0.283,
+    "qe_vcrelax_formation_energy_eV_atom": -0.2572,
+    "qe_vcrelax_vol_change_pct": -0.51,
+    "qe_vcrelax_max_displacement_A": 0.0073,
+    "qe_vcrelax_rms_displacement_A": 0.0043,
+    "qe_vcrelax_min_BB_in_A": null,
+    "qe_vcrelax_min_BB_out_A": null,
+    "qe_hull_depth_meV_atom": 3.97,
+    "qe_hull_binding_phases": [
+      [
+        "c_Al3Ni2",
+        0.5
+      ],
+      [
+        "Al ref",
+        2.5
+      ],
+      [
+        "Si ref",
+        1.0
+      ]
+    ],
+    "qe_hull_competitor_pool": [
+      "c_Al2Ni",
+      "c_Al3Ni2"
+    ],
+    "qe_hull_verdict": "METASTABLE IN DFT (PROVISIONAL LOWER BOUND)",
+    "qe_hull_verdict_note": "Al3Ni parked (never converged); missing competitor can only push the depth higher. Marginal vs 3-5 meV noise."
   },
   {
     "proposal_id": "2575",
@@ -525,7 +737,37 @@
     "competing_reaction": "0.17 C5V6 (agm003242071) + 0.17 C (mp-937760) + 1.00 C2SiV3 (agm002139633)",
     "discovery_score": 62,
     "mag_stabilization_meV_atom": 0.0,
-    "spin_matched_basis_40Ry": true
+    "spin_matched_basis_40Ry": true,
+    "qe_vcrelax_run": "t2575_V4SiC3",
+    "qe_vcrelax_energy_Ry": -1294.68613045,
+    "qe_vcrelax_sp_energy_Ry": -1294.68302477,
+    "qe_vcrelax_dE_relax_meV_atom": -2.641,
+    "qe_vcrelax_formation_energy_eV_atom": -0.5537,
+    "qe_vcrelax_vol_change_pct": -0.752,
+    "qe_vcrelax_max_displacement_A": 0.0338,
+    "qe_vcrelax_rms_displacement_A": 0.0233,
+    "qe_vcrelax_min_BB_in_A": null,
+    "qe_vcrelax_min_BB_out_A": null,
+    "qe_hull_depth_meV_atom": -133.72,
+    "qe_hull_binding_phases": [
+      [
+        "c_V3SiC2",
+        1.0
+      ],
+      [
+        "C ref",
+        2.0
+      ],
+      [
+        "V ref",
+        2.0
+      ]
+    ],
+    "qe_hull_competitor_pool": [
+      "c_V3SiC2"
+    ],
+    "qe_hull_verdict": "PROVISIONAL \u2014 BELOW AVAILABLE TIE-LINE",
+    "qe_hull_verdict_note": "V6C5 parked (never converged); a formation energy below ~ -0.58 eV/atom would flip it. Not a verification."
   },
   {
     "proposal_id": "1586",
@@ -593,7 +835,40 @@
     "competing_reaction": "3.00 B2Zr (mp-1472) + 2.00 Mn (agm002161727)",
     "discovery_score": 69,
     "spin_matched_basis_40Ry": true,
-    "mag_stabilization_meV_atom": -15.7
+    "mag_stabilization_meV_atom": -15.7,
+    "qe_vcrelax_run": "t1586_Zr3Mn2B6",
+    "qe_vcrelax_energy_Ry": -758.87484717,
+    "qe_vcrelax_sp_energy_Ry": -758.86897988,
+    "qe_vcrelax_dE_relax_meV_atom": -7.257,
+    "qe_vcrelax_formation_energy_eV_atom": -0.8451,
+    "qe_vcrelax_vol_change_pct": 0.258,
+    "qe_vcrelax_max_displacement_A": 0.0474,
+    "qe_vcrelax_rms_displacement_A": 0.0324,
+    "qe_vcrelax_min_BB_in_A": 1.8063,
+    "qe_vcrelax_min_BB_out_A": 1.8303,
+    "qe_hull_depth_meV_atom": 9.93,
+    "qe_hull_binding_phases": [
+      [
+        "c_Mn2B",
+        0.5
+      ],
+      [
+        "c_ZrB2",
+        2.5
+      ],
+      [
+        "Zr ref",
+        0.5
+      ]
+    ],
+    "qe_hull_competitor_pool": [
+      "c_Mn2B",
+      "c_MnB",
+      "c_MnB2",
+      "c_ZrB2"
+    ],
+    "qe_hull_verdict": "METASTABLE IN DFT (SUPERSEDES INTERIM VERIFIED -14.2)",
+    "qe_hull_verdict_note": "Full-system LP depth +9.9 (binding c_Mn2B x0.50, c_ZrB2 x2.50, Zr ref x0.50); the interim -14.2 was the stated-reaction tie-line only and missed the lower Mn2B tie-line. No magnetic special is lower than the FM relax (best +0.1 meV/atom); the specials do not re-verify it."
   },
   {
     "proposal_id": "3171",
@@ -657,7 +932,38 @@
     "spin_energy_eV_atom": -2779.46118,
     "spin_pressure_GPa": -2.06,
     "mag_stabilization_meV_atom": 0.0,
-    "spin_matched_basis_40Ry": true
+    "spin_matched_basis_40Ry": true,
+    "qe_vcrelax_run": "t3171_La2Ir5B2",
+    "qe_vcrelax_energy_Ry": -3677.19055772,
+    "qe_vcrelax_sp_energy_Ry": -3677.1826983,
+    "qe_vcrelax_dE_relax_meV_atom": -5.941,
+    "qe_vcrelax_formation_energy_eV_atom": -0.7249,
+    "qe_vcrelax_vol_change_pct": -0.479,
+    "qe_vcrelax_max_displacement_A": 0.0354,
+    "qe_vcrelax_rms_displacement_A": 0.019,
+    "qe_vcrelax_min_BB_in_A": 3.1959,
+    "qe_vcrelax_min_BB_out_A": 3.141,
+    "qe_hull_depth_meV_atom": -26.24,
+    "qe_hull_binding_phases": [
+      [
+        "c_La2Ir5B4",
+        1.0
+      ],
+      [
+        "c_LaIr2",
+        1.0
+      ],
+      [
+        "Ir ref",
+        1.0
+      ]
+    ],
+    "qe_hull_competitor_pool": [
+      "c_La2Ir5B4",
+      "c_LaIr2"
+    ],
+    "qe_hull_verdict": "VERIFIED DFT GROUND STATE (scoped to tested set)",
+    "qe_hull_verdict_note": "At or below the hull within 3-5 meV/atom pipeline noise."
   },
   {
     "proposal_id": "0982",
@@ -725,7 +1031,34 @@
     "competing_reaction": "0.67 B2Fe3Sc (agm002137221) + 2.33 B2Sc (mp-2252)",
     "discovery_score": 73,
     "spin_matched_basis_40Ry": true,
-    "mag_stabilization_meV_atom": -30.5
+    "mag_stabilization_meV_atom": -30.5,
+    "qe_vcrelax_run": "t0982_Sc3Fe2B6",
+    "qe_vcrelax_energy_Ry": -972.81646661,
+    "qe_vcrelax_sp_energy_Ry": -972.85176394,
+    "qe_vcrelax_dE_relax_meV_atom": 43.659,
+    "qe_vcrelax_formation_energy_eV_atom": -0.7028,
+    "qe_vcrelax_vol_change_pct": 0.399,
+    "qe_vcrelax_max_displacement_A": 0.0696,
+    "qe_vcrelax_rms_displacement_A": 0.0379,
+    "qe_vcrelax_min_BB_in_A": 1.7546,
+    "qe_vcrelax_min_BB_out_A": 1.7414,
+    "qe_hull_depth_meV_atom": 115.18,
+    "qe_hull_binding_phases": [
+      [
+        "c_ScB2",
+        2.3333333333333335
+      ],
+      [
+        "c_ScFe3B2",
+        0.6666666666666666
+      ]
+    ],
+    "qe_hull_competitor_pool": [
+      "c_ScB2",
+      "c_ScFe3B2"
+    ],
+    "qe_hull_verdict": "METASTABLE IN DFT (CONVERGED BASIN)",
+    "qe_hull_verdict_note": "Clean re-run converged in the higher electronic basin (+115.2). A lower electronic state is known (evidence attempt0 reached -972.87710 Ry, unrelaxed) bounding the true depth at <= +35.8. Metastable on all evidence."
   },
   {
     "proposal_id": "1668",
@@ -789,7 +1122,34 @@
     "spin_energy_eV_atom": -1365.825552,
     "spin_pressure_GPa": -1.15,
     "mag_stabilization_meV_atom": 0.0,
-    "spin_matched_basis_40Ry": true
+    "spin_matched_basis_40Ry": true,
+    "qe_vcrelax_run": "t1668_ScOs2B2",
+    "qe_vcrelax_energy_Ry": -501.9315069,
+    "qe_vcrelax_sp_energy_Ry": -501.92887703,
+    "qe_vcrelax_dE_relax_meV_atom": -7.156,
+    "qe_vcrelax_formation_energy_eV_atom": -0.329,
+    "qe_vcrelax_vol_change_pct": 0.408,
+    "qe_vcrelax_max_displacement_A": 0.0641,
+    "qe_vcrelax_rms_displacement_A": 0.0405,
+    "qe_vcrelax_min_BB_in_A": 1.8273,
+    "qe_vcrelax_min_BB_out_A": 1.949,
+    "qe_hull_depth_meV_atom": 173.77,
+    "qe_hull_binding_phases": [
+      [
+        "c_ScB2",
+        1.0
+      ],
+      [
+        "Os ref",
+        2.0
+      ]
+    ],
+    "qe_hull_competitor_pool": [
+      "c_ScB2",
+      "c_ScOsB2"
+    ],
+    "qe_hull_verdict": "METASTABLE IN DFT",
+    "qe_hull_verdict_note": "+173.8 meV/atom above the QE hull."
   },
   {
     "proposal_id": "1575",
@@ -853,7 +1213,35 @@
     "spin_energy_eV_atom": -1423.716866,
     "spin_pressure_GPa": -0.65,
     "mag_stabilization_meV_atom": 0.0,
-    "spin_matched_basis_40Ry": true
+    "spin_matched_basis_40Ry": true,
+    "qe_vcrelax_run": "t1575_Ta3Ni2B6",
+    "qe_vcrelax_energy_Ry": -1151.05551555,
+    "qe_vcrelax_sp_energy_Ry": -1151.0538443,
+    "qe_vcrelax_dE_relax_meV_atom": -2.067,
+    "qe_vcrelax_formation_energy_eV_atom": -0.6319,
+    "qe_vcrelax_vol_change_pct": -0.181,
+    "qe_vcrelax_max_displacement_A": 0.0226,
+    "qe_vcrelax_rms_displacement_A": 0.0132,
+    "qe_vcrelax_min_BB_in_A": 1.7522,
+    "qe_vcrelax_min_BB_out_A": 1.7785,
+    "qe_hull_depth_meV_atom": 14.93,
+    "qe_hull_binding_phases": [
+      [
+        "c_TaB2",
+        1.0
+      ],
+      [
+        "c_TaNiB2",
+        0.5
+      ]
+    ],
+    "qe_hull_competitor_pool": [
+      "c_Ta3B4",
+      "c_TaB2",
+      "c_TaNiB2"
+    ],
+    "qe_hull_verdict": "METASTABLE IN DFT",
+    "qe_hull_verdict_note": "+14.9 meV/atom above the QE hull."
   },
   {
     "proposal_id": "3379",
@@ -917,6 +1305,39 @@
     "spin_energy_eV_atom": -1424.752366,
     "spin_pressure_GPa": -1.69,
     "mag_stabilization_meV_atom": 0.0,
-    "spin_matched_basis_40Ry": true
+    "spin_matched_basis_40Ry": true,
+    "qe_vcrelax_run": "t3379_Nb3Mo3B8",
+    "qe_vcrelax_energy_Ry": -1466.05034437,
+    "qe_vcrelax_sp_energy_Ry": -1466.04314465,
+    "qe_vcrelax_dE_relax_meV_atom": -6.997,
+    "qe_vcrelax_formation_energy_eV_atom": -0.6528,
+    "qe_vcrelax_vol_change_pct": -0.715,
+    "qe_vcrelax_max_displacement_A": 0.0322,
+    "qe_vcrelax_rms_displacement_A": 0.0158,
+    "qe_vcrelax_min_BB_in_A": 1.7986,
+    "qe_vcrelax_min_BB_out_A": 1.823,
+    "qe_hull_depth_meV_atom": -124.47,
+    "qe_hull_binding_phases": [
+      [
+        "c_MoB2",
+        1.0
+      ],
+      [
+        "c_NbB2",
+        3.0
+      ],
+      [
+        "Mo ref",
+        2.0
+      ]
+    ],
+    "qe_hull_competitor_pool": [
+      "c_Mo2B5",
+      "c_MoB2",
+      "c_Nb3B4",
+      "c_NbB2"
+    ],
+    "qe_hull_verdict": "UNEVALUABLE AS SPECIFIED",
+    "qe_hull_verdict_note": "No non-negative decomposition from the 4 listed competitors alone (Nb3B4, Mo2B5, NbB2, MoB2); LP infeasible as specified. Full-system LP incl. elemental refs IS feasible: -124.5 meV/atom (binding c_MoB2 x1.00, c_NbB2 x3.00, Mo ref x2.00), i.e. below the full hull \u2014 the difference is entirely the elemental refs, which the specified test excludes. T*dS_conf(1000 K) upper bound 18.4 meV/atom (full Nb/Mo disorder) does not change the specified-test outcome."
   }
 ]
